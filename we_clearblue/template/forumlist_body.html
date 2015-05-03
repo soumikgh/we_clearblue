@@ -42,6 +42,7 @@
 					<dd class="topics">{L_TOPICS}: <strong>{forumrow.TOPICS}</strong><br />{L_POSTS}: <strong>{forumrow.POSTS}</strong></dd>
 					<dd class="lastpost"><span>
 						<!-- IF forumrow.U_UNAPPROVED_TOPICS --><a href="{forumrow.U_UNAPPROVED_TOPICS}">{UNAPPROVED_IMG}</a><!-- ENDIF -->
+						<!-- IF not S_IS_BOT --><i class="fa fa-file-text-o fa-fw"></i> <a href="{forumrow.U_LAST_POST}" title="{forumrow.LAST_POST_SUBJECT}">{forumrow.LAST_POST_SUBJECT_TR}</a><br /><!-- ENDIF -->
 						<!-- IF forumrow.LAST_POST_TIME --><i class="fa fa-user fa-fw"></i> <dfn>{L_LAST_POST}</dfn> {L_POST_BY_AUTHOR} {forumrow.LAST_POSTER_FULL}
 						<!-- IF not S_IS_BOT --><a href="{forumrow.U_LAST_POST}">{LAST_POST_IMG}</a> <!-- ENDIF --><br /><i class="fa fa-clock-o fa-fw"></i> {forumrow.LAST_POST_TIME}<!-- ELSE --><span class="inventea-no-items">{L_NO_POSTS}</span><!-- ENDIF --></span>
 					</dd>
